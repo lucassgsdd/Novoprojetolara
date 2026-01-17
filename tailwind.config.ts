@@ -12,8 +12,20 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ['Inter', 'sans-serif'],
+      heading: ['Montserrat', 'sans-serif'],
+    },
     extend: {
       colors: {
+        gold: {
+          DEFAULT: "hsl(45 64% 52%)",
+          light: "hsl(45 64% 72%)",
+        },
+        navy: {
+          DEFAULT: "hsl(220 82% 21%)",
+          light: "hsl(220 60% 35%)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",

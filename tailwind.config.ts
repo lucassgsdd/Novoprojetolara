@@ -15,6 +15,7 @@ export default {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
       heading: ['Montserrat', 'sans-serif'],
+      serif: ['Playfair Display', 'Georgia', 'serif'],
     },
     extend: {
       colors: {

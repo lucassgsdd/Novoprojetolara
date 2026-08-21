@@ -1,4 +1,4 @@
-import { MessageCircle, ChevronDown, Award, BookOpen, Shield } from 'lucide-react';
+import { MessageCircle, Award, BookOpen, Shield } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import laraHero from '@/assets/lara-hero.jpeg';
 
@@ -50,11 +50,11 @@ const HeroSection = () => {
 
           {/* Subtitle */}
           <p className="text-lg md:text-xl lg:text-2xl text-primary-foreground/90 mb-4 font-heading leading-relaxed">
-            Segurança jurídica e estratégia financeira para escalar o seu patrimônio.
+            Especialista em Simples Nacional, MEI e constituição de empresas. Oferecemos soluções fiscais e contábeis seguras, descomplicadas e alinhadas à sua realidade.
           </p>
           <p className="text-base md:text-lg text-primary-foreground/80 mb-10 max-w-2xl leading-relaxed">
-            Com <span className="text-accent font-bold">Lara Luisa</span> |{' '}
-            <span className="font-bold">Estrategista de Negócios & CEO</span>
+            <span className="text-accent font-bold">Lara Luisa</span> |{' '}
+            <span className="font-bold">Estrategista de Negócios & CEO Allure Agency</span>
           </p>
 
           {/* CTA Buttons */}
@@ -77,8 +77,7 @@ const HeroSection = () => {
             <Button
               onClick={scrollToAbout}
               size="lg"
-              variant="outline"
-              className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 font-semibold text-base px-8"
+              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold text-base px-8"
             >
               Conhecer Trajetória
             </Button>
@@ -108,10 +107,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-        <ChevronDown className="w-8 h-8 text-primary-foreground/60" />
-      </div>
     </section>
   );
 };

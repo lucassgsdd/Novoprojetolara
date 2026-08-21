@@ -1,4 +1,4 @@
-import { MessageCircle, Mail, Linkedin, Shield } from 'lucide-react';
+import { MessageCircle, Mail, Instagram, Shield } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -57,13 +57,13 @@ const Footer = () => {
                 lkaumo@hotmail.com
               </a>
               <a
-                href="https://linkedin.com/in/lara-luisa-57448885/"
+                href="https://www.instagram.com/laraluisak"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors text-sm"
               >
-                <Linkedin className="w-4 h-4" />
-                LinkedIn
+                <Instagram className="w-4 h-4" />
+                @laraluisak
               </a>
             </div>
           </div>
@@ -73,7 +73,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/10 mt-10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             <p className="text-primary-foreground/60 text-sm">
-              © 2024 Lara Luisa - Todos os direitos reservados.
+              © 2024-2026 Lara Luisa - Todos os direitos reservados.
             </p>
             <p className="text-primary-foreground/50 text-xs">
               CNPJ: 43.848.040/0001-09

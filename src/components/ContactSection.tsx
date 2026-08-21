@@ -1,47 +1,9 @@
-import { useState } from 'react';
-import { MessageCircle, Mail, Linkedin, MapPin, Shield, Send } from 'lucide-react';
+import { MessageCircle, Mail, Instagram, Shield, Send } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { useToast } from '@/hooks/use-toast';
 
 const ContactSection = () => {
-  const { toast } = useToast();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    const form = e.currentTarget;
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch('https://formsubmit.co/ajax/lkaumo@hotmail.com', {
-        method: 'POST',
-        body: formData,
-      });
-
-      if (response.ok) {
-        toast({
-          title: 'Mensagem enviada!',
-          description: 'Entraremos em contato em breve.',
-        });
-        form.reset();
-      } else {
-        throw new Error('Erro ao enviar');
-      }
-    } catch {
-      toast({
-        title: 'Erro ao enviar',
-        description: 'Por favor, tente novamente ou entre em contato pelo WhatsApp.',
-        variant: 'destructive',
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   const contactInfo = [
     {
       icon: MessageCircle,
@@ -58,11 +20,11 @@ const ContactSection = () => {
       color: 'bg-blue-500/10 text-blue-600',
     },
     {
-      icon: Linkedin,
-      label: 'LinkedIn',
-      value: 'Lara Luisa',
-      href: 'https://linkedin.com/in/lara-luisa-57448885/',
-      color: 'bg-sky-500/10 text-sky-600',
+      icon: Instagram,
+      label: 'Instagram',
+      value: '@laraluisak',
+      href: 'https://www.instagram.com/laraluisak',
+      color: 'bg-pink-500/10 text-pink-600',
     },
   ];
 
@@ -145,7 +107,7 @@ const ContactSection = () => {
               Preencha o formulário abaixo e entraremos em contato em até 24 horas.
             </p>
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form action="https://formsubmit.co/lkaumo@hotmail.com" method="POST" className="space-y-4">
               <input type="hidden" name="_subject" value="Nova mensagem do site - Contadora Lara Luisa" />
               <input type="hidden" name="_template" value="table" />
               
@@ -210,17 +172,10 @@ const ContactSection = () => {
 
               <Button
                 type="submit"
-                disabled={isSubmitting}
                 className="w-full bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
               >
-                {isSubmitting ? (
-                  'Enviando...'
-                ) : (
-                  <>
-                    <Send className="w-4 h-4 mr-2" />
-                    Enviar Mensagem
-                  </>
-                )}
+                <Send className="w-4 h-4 mr-2" />
+                Enviar Mensagem
               </Button>
             </form>
           </div>

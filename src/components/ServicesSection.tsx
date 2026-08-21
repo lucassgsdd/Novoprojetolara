@@ -59,15 +59,15 @@ const ServicesSection = () => {
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
           <span className="text-accent font-semibold text-sm uppercase tracking-wider mb-2 block">
-            Serviços
+            Serviços Estratégicos
           </span>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Serviços Especializados para{' '}
-            <span className="text-primary">Cada Fase do seu Negócio</span>
+            Soluções para{' '}
+            <span className="text-primary">Proteger e Escalar</span> seu Patrimônio
           </h2>
           <p className="text-muted-foreground text-lg">
-            Soluções completas para você focar no que realmente importa: fazer seu
-            negócio crescer.
+            Serviços especializados para cada fase do seu negócio, com foco em
+            segurança jurídica e crescimento sustentável.
           </p>
         </div>
 

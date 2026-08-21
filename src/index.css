@@ -116,6 +116,10 @@
   }
 }
 
+.font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
 @layer utilities {
   .font-heading {
     font-family: 'Montserrat', sans-serif;

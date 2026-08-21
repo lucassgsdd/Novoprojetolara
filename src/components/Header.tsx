@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, MessageCircle } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -65,20 +64,6 @@ const Header = () => {
               {link.label}
             </a>
           ))}
-          <Button
-            asChild
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold"
-          >
-            <a
-              href="https://wa.me/5545999360309"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2"
-            >
-              <MessageCircle className="w-4 h-4" />
-              WhatsApp
-            </a>
-          </Button>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -108,20 +93,6 @@ const Header = () => {
                 {link.label}
               </a>
             ))}
-            <Button
-              asChild
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold w-full"
-            >
-              <a
-                href="https://wa.me/5545999360309"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2"
-              >
-                <MessageCircle className="w-4 h-4" />
-                Fale no WhatsApp
-              </a>
-            </Button>
           </div>
         </nav>
       )}
